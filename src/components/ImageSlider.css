@@ -69,7 +69,7 @@
   position: absolute;
   top: 33.6%;
   left: 7.8%;
-  width: 30vw;
+  width: 38vw;
 }
 
 .book-event-text {
@@ -78,7 +78,7 @@
   font-weight: 400;
   letter-spacing: 1px;
   margin: 0;
-  font-size: 1vw;
+  font-size: 1.2vw;
   word-spacing: 5px;
 }
 
@@ -106,7 +106,7 @@
   top: 60.3%;
   left: 7.8%;
   border: none;
-  font-size: 1.024vw;
+  font-size: 1.24vw;
   font-family: "Noto Sans", sans-serif;
   font-weight: 500;
   border-radius: 2px;
