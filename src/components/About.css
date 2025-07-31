@@ -1,0 +1,138 @@
+.about-section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 20px; /* Add padding for better spacing */
+}
+.about-left{
+    width:400px;
+    flex-shrink: 0;
+}
+.group-photo{
+    width:100%;
+    border-radius: 4px;
+}
+.about-right{
+    width:750px;
+    display:flex;
+    flex-direction: column;
+    margin-left: 50px;
+    align-items: center;
+}
+.about-heading{
+    width:335px;
+}
+.about-heading-content{
+    margin-top: 10px;
+    margin-bottom:10px;
+    width:100%;
+    font-family: lato;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+.pseudo-group-photo-container{
+    width:0px;
+}
+.pseudo-group-photo{
+    width:100%;
+    display:none;
+}
+.about-paragraph{
+    width:750px;
+}
+.about-paragraph-content{
+    margin-top: 10px;
+    margin-bottom:10px;
+    width:100%;
+    font-family: lato;
+    line-height: 30px;
+    color: #252323;
+}
+.bold{
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Tablet breakpoint */
+@media all and (max-width:768px){
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15px;
+    }
+
+    .about-left {
+        width: 90%;
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+
+    .about-right {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .about-heading {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-paragraph {
+        width: 100%;
+    }
+}
+
+/* Mobile breakpoint */
+@media all and (max-width:640px){
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .about-left {
+        display: none; /* Hides the image section */
+    }
+
+    .about-right {
+        width: 95%;
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .about-heading {
+        width: 100%;
+        text-align: center; /* Center the heading */
+    }
+    .about-heading-content{
+        font-size: 18px;
+    }
+    .bold{
+        font-size: 20px;
+    }
+
+    .about-paragraph {
+        width: 100%;
+    }
+
+    .about-paragraph-content {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .pseudo-group-photo-container{
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+    .pseudo-group-photo{
+        width:100%;
+        display: inline-block;
+        border-radius: 4px; /* Match the main image styling */
+    }
+    .middle-section{
+        display: none;
+    }
+}

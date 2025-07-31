@@ -1,0 +1,233 @@
+/* TeamCarousel.css */
+
+.team {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-heading {
+  width: 100%;
+  font-family: lato;
+  font-size: 17px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.team-paragraph {
+  width: 100%;
+  font-family: montserrat;
+  font-weight: 600;
+  font-size: 30px;
+  margin-top: 0px;
+}
+
+.team-paragraph-container {
+  margin-top: 10px;
+  width: 500px;
+}
+
+.team-heading-container {
+  width: 260px;
+}
+
+.team-top {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.team-bottom {
+  margin-top: 50px;
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team-boxes {
+  display: flex;
+  gap: 40px;
+}
+
+.team-box {
+  width: 255px;
+  height: 352px;
+  background-color: white;
+  box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.25);
+  position: relative;
+  border-radius: 10px;
+}
+
+.team-box:hover {
+  cursor: pointer;
+}
+
+.profile-picture-container {
+  width: 255px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: gray;
+  position: relative;
+  border-radius: 10px;
+}
+
+.profile-picture {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -20px;
+  background-color: gray;
+  padding: 10px;
+}
+
+.profile-stats {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  font-family: poppins;
+  font-weight: 500;
+  margin: 0px;
+  font-size: 20px;
+}
+
+.role {
+  font-family: poppins;
+  font-weight: 300;
+  margin-top: 30px;
+}
+
+.media-icons-container .media-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 111px;
+  margin-top: 20px;
+}
+
+.team-instagram, 
+.team-linkedin, 
+.team-snapchat {
+  color: #3B3B3B;
+}
+
+.media-icons-container {
+  margin-top: 10px;
+  width: 255px;
+  display: flex;
+  justify-content: center;
+}
+
+.team-left-arrow, 
+.team-right-arrow {
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  padding: 4px;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .team-top,
+  .team-bottom {
+    width: 100%;
+    max-width: 900px;
+    padding: 0 20px;
+  }
+  
+  .team-paragraph-container {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .team-heading-container {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-top,
+  .team-bottom {
+    width: 100%;
+    padding: 0 15px;
+  }
+  
+  .team-paragraph {
+    font-size: 24px;
+  }
+  
+  .team-heading {
+    font-size: 15px;
+  }
+  
+  .team-boxes {
+    gap: 20px;
+  }
+  
+  .team-box {
+    width: 220px;
+    height: 320px;
+  }
+  
+  .profile-picture-container {
+    width: 220px;
+    height: 120px;
+  }
+  
+  .media-icons-container {
+    width: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-paragraph {
+    font-size: 20px;
+  }
+  
+  .team-heading {
+    font-size: 14px;
+  }
+  
+  .team-boxes {
+    gap: 15px;
+  }
+  
+  .team-box {
+    width: 200px;
+    height: 300px;
+  }
+  
+  .profile-picture-container {
+    width: 200px;
+    height: 110px;
+  }
+  
+  .media-icons-container {
+    width: 200px;
+  }
+  
+  .profile-picture {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .name {
+    font-size: 18px;
+  }
+}

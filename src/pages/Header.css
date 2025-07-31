@@ -1,0 +1,135 @@
+
+
+
+/*navigation section*/
+nav {
+    display: flex;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    height: 82px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo {
+    color: rgb(169, 169, 169);
+    font-family: ubuntu;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.middle-section {
+    display: flex;
+    width: 400px;
+    flex-shrink: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.middle-section .menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+}
+
+.middle-section .menu li {
+    list-style: none;
+
+}
+
+.middle-section .menu a {
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    font-family: lato;
+
+}
+
+.right-section {
+    display: flex;
+    width: 50px;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+    padding-left: 10px;
+
+}
+
+.right-section .media-icons {
+    display: flex;
+    width: 50px;
+    justify-content: space-between;
+
+}
+
+.right-section .media-icons a {
+    color: white;
+}
+
+.right-section .hamburger-menu {
+    color: white;
+    display: none;
+
+}
+
+
+.sidebar-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    position: fixed;
+    top: 82px;
+    right: 0px;
+    background-color: black;
+    margin: 0px;
+    width: 40%;
+    bottom: 0vh;
+    padding:40px 0px;
+    z-index:100;
+    
+
+}
+
+.sidebar-menu li {
+    list-style: none;
+    margin: 10px 0px;
+
+}
+
+.sidebar-menu a {
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    font-family: lato;
+
+}
+
+@media all and (max-width:640px) {
+    .middle-section {
+        display: none;
+    }
+
+    .right-section {
+        width: 100px;
+    }
+
+    .right-section .hamburger-menu {
+        display: inline-block;
+    }
+
+    .sidebar-menu {
+       display:none;
+
+    }
+
+} 

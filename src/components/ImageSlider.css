@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  background-color: #ffffff; /* fallback background */
+  
+}
+
+.particles-overlay {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+  overflow: hidden;
+  
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  /* Let aspect-ratio determine height automatically */
+  aspect-ratio: 3/2;
+  overflow: hidden;
+  /* Prevent from getting taller than viewport */
+  max-height: 100vh;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1);
+  transition: opacity 1s ease-in-out, transform 10s ease-in-out;
+  z-index: 1;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.overlay {
+  position: absolute;
+  display: flex;
+  flex: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+/* "BOOK STUDIOMCET FOR YOUR EVENT!" */
+.book-event {
+  position: absolute;
+  top: 33.6%;
+  left: 7.8%;
+  width: 30vw;
+}
+
+.book-event-text {
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0;
+  font-size: 1vw;
+  word-spacing: 5px;
+}
+
+/* "Get professional photography..." */
+.book-event-description {
+  position: absolute;
+  top: 37.5%;
+  left: 7.8%;
+  width: 39.6vw;
+}
+
+.book-event-description-content {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 2.53vw;
+  color: white;
+}
+
+/* Button */
+.book-event-button {
+  background-color: white;
+  color: black;
+  padding: 0.78% 1.57%;
+  position: absolute;
+  top: 60.3%;
+  left: 7.8%;
+  border: none;
+  font-size: 1.024vw;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  border-radius: 2px;
+  transition: all 0.15s ease;
+}
+
+.book-event-button:hover {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Arrow icon inside the button */
+.right-arrow {
+  margin-left: 10px;
+}
+
+/* Arrow icon inside the button */
+.right-arrow {
+  margin-left: 10px;
+}
+
+@media all and (max-width: 640px) {
+  .slider-container {
+    height: auto;
+  }
+
+  .book-event {
+    top: 43.6%;
+   
+  }
+
+  /* "Get professional photography..." */
+  .book-event-description {
+    top: 47.5%;
+  }
+
+  /* Button */
+  .book-event-button {
+    top: 70.3%;
+  }
+}
+
