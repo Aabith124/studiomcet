@@ -79,9 +79,9 @@
   flex-shrink: 0;
   width: 255px;
   height: 352px;
-  background-color: white;
-  box-shadow: 4px 4px 12px 2px rgba(0, 0, 0, 0.15);
-  border-radius: 10px;
+  background-color: #ffffff;
+  border:1px solid #808080;
+  border-radius: 11px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -329,7 +329,7 @@
 
   .team-boxes {
     gap: 15px;
-    padding: 0 8px;
+    padding: 0 4px;
   }
 
   .team-box {
@@ -402,6 +402,6 @@
 
 @media (max-width: 480px) {
   .carousel-track-container {
-    max-width: 250px;
+    max-width: 210px;
 }
 }
