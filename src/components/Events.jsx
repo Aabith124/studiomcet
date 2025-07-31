@@ -5,44 +5,44 @@ export function Events() {
 
     const[events, setEvents] = useState([
         {
-            name: 'Reliving The Most Vibrant<br />Moments | VARNAM',
-            date: 'JANUARY 7<sup>th</sup> & 8<sup>th</sup> 2025',
-            image: '/Images/pongal24.jpg',
+            name: 'Reliving The Most Vibrant<br />Moments | PONGAL',
+            date: 'JANUARY 9<sup>th</sup>  2025',
+            image: '/Images/pongal25.jpg',
             alt:'Event',
             key:1
         },
          {
-            name: 'Reliving The Most Vibrant<br />Moments | VARNAM',
-            date: 'JANUARY 7<sup>th</sup> & 8<sup>th</sup> 2025',
-            image: 'DSC06034.jpg',
+            name: 'Reliving The Most Vibrant<br />Moments | DJ SUNDAR',
+            date: 'JANUARY 8<sup>th</sup> 2025',
+            image: '/Images/sundar.jpg',
             alt:'Event',
             key:2
         },
          {
-            name: 'Reliving The Most Vibrant<br />Moments | VARNAM',
-            date: 'JANUARY 7<sup>th</sup> & 8<sup>th</sup> 2025',
-            image: 'DSC06034.jpg',
+            name: 'Reliving The Most Vibrant<br />Moments | VJ SIDHU',
+            date: 'JANUARY 7<sup>th</sup> 2025',
+            image: '/Images/sidhu.jpg',
             alt:'Event',
             key:3
         },
          {
-            name: 'Reliving The Most Vibrant<br />Moments | VARNAM',
-            date: 'JANUARY 7<sup>th</sup> & 8<sup>th</sup> 2025',
-            image: 'DSC06034.jpg',
+            name: 'Reliving The Most Vibrant<br />Moments | HOMEST',
+            date: 'MARCH 12<sup>th</sup> 2024',
+            image: '/Images/hostelday.jpg',
             alt:'Event',
             key:4
         },
          {
-            name: 'Reliving The Most Vibrant<br />Moments | VARNAM',
-            date: 'JANUARY 7<sup>th</sup> & 8<sup>th</sup> 2025',
-            image: 'DSC06034.jpg',
+            name: 'Reliving The Most Vibrant<br />Moments | CULTURALS',
+            date: 'FEBRUARY 15<sup>th</sup> 2024',
+            image: '/Images/fac.jpg',
             alt:'Event',
             key:5
         },
          {
-            name: 'Reliving The Most Vibrant<br />Moments | VARNAM',
-            date: 'JANUARY 7<sup>th</sup> & 8<sup>th</sup> 2025',
-            image: 'DSC06034.jpg',
+            name: 'Reliving The Most Vibrant<br />Moments | pongal24',
+            date: 'JANUARY 10<sup>th</sup> 2024',
+            image: '/Images/pongal24.jpg',
             alt:'Event',
             key:6
         },

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './BookNow.css';
 import './Confirmation.css';
 
@@ -21,6 +21,7 @@ export const BookNow = () => {
 
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [fadeIn, setFadeIn] = useState(false);
+  const confirmationRef = useRef(null); // Step 1
 
   const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -43,7 +44,12 @@ export const BookNow = () => {
     e.preventDefault();
     console.log('Form submitted:', formData);
     setIsSubmitted(true);
-    setTimeout(() => setFadeIn(true), 100);
+    setTimeout(() => {
+      setFadeIn(true);
+      if (confirmationRef.current) {
+        confirmationRef.current.scrollIntoView({ behavior: 'smooth' }); // Step 2
+      }
+    }, 100);
   };
 
   const isFormDisabled = isSubmitted;
@@ -63,17 +69,19 @@ export const BookNow = () => {
         </div>
       </div>
 
-      {isSubmitted ?(
-  <div className={`booking-confirmation ${fadeIn ? 'fade-in' : ''}`}>
-    <div className="lottie-check">
-      <i className="fa-solid fa-circle-check" style={{ color: '#63E6BE', fontSize: '4rem' }}></i>
-    </div>
-    <h2>Event Booked Successfully!</h2>
-    <p>Thanks for booking StudioMCET — your request has been received.</p>
-    <a href="/" className="go-home-btn">Go Home</a>
-  </div>
-)
-: (
+      {isSubmitted ? (
+        <div
+          ref={confirmationRef}
+          className={`booking-confirmation ${fadeIn ? 'fade-in' : ''}`} // Step 3
+        >
+          <div className="lottie-check">
+            <i className="fa-solid fa-circle-check" style={{ color: '#63E6BE', fontSize: '4rem' }}></i>
+          </div>
+          <h2>Event Booked Successfully!</h2>
+          <p>Thanks for booking StudioMCET — your request has been received.</p>
+          <a href="/" className="go-home-btn">Go Home</a>
+        </div>
+      ) : (
         <div className="form-container">
           <h1 className="form-title">Book Now</h1>
           <form onSubmit={handleSubmit}>

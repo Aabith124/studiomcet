@@ -34,7 +34,7 @@ export function Header(){
         </div>
         <div className="right-section">
             <div className="media-icons">
-                <a href="https://www.linkedin.com/in/mohamed-abith" target="_blank"><i
+                <a href="https://www.linkedin.com/in/" target="_blank"><i
                         className="fab fa-linkedin-in"></i></a>
                 <a href="https://www.instagram.com/studiomcet" target="_blank"><i className="fab fa-instagram"></i></a>
                   

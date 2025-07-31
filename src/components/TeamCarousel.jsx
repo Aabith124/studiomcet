@@ -2,54 +2,48 @@ import React, { useState, useEffect, useRef } from 'react';
 import './TeamCarousel.css';
 
 const teamMembers = [
+
   {
-    name: "Mohamed Abith",
+    name: "Ram",
     role: "Sr. Technical Lead",
-    image: "/Abith_Profile.jpg",
+    image: "Images/ram.jpg",
+    instagram: "https://www.instagram.com/ram_ehhh",
+    linkedin: "https://www.linkedin.com/in/",
+    snapchat: "https://www.snapchat.com/add"
+  },
+    {
+    name: "Aabith",
+    role: "Sr. Technical Lead",
+    image: "Images/abith.jpg",
     instagram: "https://www.instagram.com/aabith___",
     linkedin: "https://www.linkedin.com/in/mohamed-abith",
     snapchat: "https://www.snapchat.com/add/aabi_thh"
   },
   {
-    name: "Sarah Johnson",
-    role: "Creative Director",
-    image: "Images/Sarah_Profile.jpg",
-    instagram: "https://www.instagram.com/sarah",
-    linkedin: "https://www.linkedin.com/in/sarah",
-    snapchat: "https://www.snapchat.com/add/sarah"
+    name: "Balaji",
+    role: "Sr. Technical Lead",
+    image: "Images/balaji.jpg",
+    instagram: "https://www.instagram.com/balaji___senthilkumar",
+    linkedin: "https://www.linkedin.com/in/",
+    snapchat: "https://www.snapchat.com/add/"
   },
   {
-    name: "John Smith",
-    role: "Lead Developer",
-    image: "Images/John_Profile.jpg",
-    instagram: "https://www.instagram.com/john",
-    linkedin: "https://www.linkedin.com/in/john",
-    snapchat: "https://www.snapchat.com/add/john"
-  },
-  {
-    name: "Emily Davis",
-    role: "UX Designer",
-    image: "Images/Emily_Profile.jpg",
-    instagram: "https://www.instagram.com/emily",
+    name: "Harish",
+    role: "Sr. Technical Lead",
+    image: "Images/harish.jpg",
+    instagram: "https://www.instagram.com/harishuhhh__",
     linkedin: "https://www.linkedin.com/in/emily",
     snapchat: "https://www.snapchat.com/add/emily"
   },
   {
-    name: "Michael Brown",
-    role: "Marketing Manager",
-    image: "Images/Michael_Profile.jpg",
-    instagram: "https://www.instagram.com/michael",
+    name: "karthik",
+    role: "Sr. Technical Lead",
+    image: "Images/karthik.jpg",
+    instagram: "https://www.instagram.com/karthik__kutta_",
     linkedin: "https://www.linkedin.com/in/michael",
     snapchat: "https://www.snapchat.com/add/michael"
   },
-  {
-    name: "Lisa Wilson",
-    role: "Project Manager",
-    image: "Images/Lisa_Profile.jpg",
-    instagram: "https://www.instagram.com/lisa",
-    linkedin: "https://www.linkedin.com/in/lisa",
-    snapchat: "https://www.snapchat.com/add/lisa"
-  }
+  
 ];
 
 export const TeamCarousel = () => {
