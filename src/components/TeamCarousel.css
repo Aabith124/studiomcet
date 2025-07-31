@@ -402,6 +402,6 @@
 
 @media (max-width: 480px) {
   .carousel-track-container {
-    max-width: calc(1 * (180px + 10px) + 16px);
-  }
+    max-width: 250px;
+}
 }
