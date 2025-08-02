@@ -73,7 +73,7 @@ export const ImageSlider = () => {
             <Link to="/booknow">
               <div>
                 <button className="book-event-button">
-                  Book Event
+                  Book Now
                   <span className="right-arrow">
                     <i className="fa fa-long-arrow-right"></i>
                   </span>
